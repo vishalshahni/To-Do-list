@@ -5,11 +5,11 @@ html, body {
   flex-direction: column;
 }
 
-.container{
+.container {
   flex: 1;
-  margin-top: 100px;
-  margin-left: 50vh;
-  width: 80vh;
+  margin: 20px auto;
+  max-width: 90%;
+  width: 600px;
 }
 
 #task-input {
@@ -31,12 +31,14 @@ li.completed {
   text-decoration: line-through;
   color: gray;
 }
+
 button {
   background: transparent;
   border: none;
   cursor: pointer;
   color: #007bff;
 }
+
 button:hover {
   text-decoration: underline;
 }
@@ -45,4 +47,38 @@ button:hover {
   background-color: #f8f9fa;
   padding: 10px;
   text-align: center;
+}
+
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 10px;
+  }
+  #task-input {
+    width: 100%;
+  }
+  li {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #task-input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  button {
+    font-size: 0.9rem; 
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
 }
