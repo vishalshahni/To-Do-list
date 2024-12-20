@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  flex: 1;
+  margin-top: 100px;
+  margin-left: 50vh;
+  width: 80vh;
+}
+
+#task-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+}
+button:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+}
